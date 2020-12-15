@@ -1,0 +1,25 @@
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 10px;
+}
+
+.navbar__div-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__div-img-logo {
+    flex-grow: 1;
+}
+
+.navbar__ul-menu a {
+    display: block;
+    padding: 10px 0;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navbar__ul-menu * + * {
+    margin-top: 5px;
+}

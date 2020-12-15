@@ -5,8 +5,16 @@
     font-family: 'Rubik', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: $primary-color;
+}
+
+ul {
+    list-style: none;
 }
 
 img {
@@ -17,4 +25,8 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.wrapper {
+    max-width: $wrapper-max;
 }

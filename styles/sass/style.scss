@@ -2,6 +2,15 @@
 @import 'variables';
 @import 'global';
 @import 'typography';
+@import 'navbar';
+@import 'hamburger';
+
+.bio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .bio__div-img-profile {
     width: 150px;
