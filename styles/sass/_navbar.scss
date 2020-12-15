@@ -1,6 +1,11 @@
 .navbar {
+    background-color: $primary-color;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 15px 10px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .navbar__div-container {
@@ -12,11 +17,22 @@
     flex-grow: 1;
 }
 
+.navbar__input-check {
+    position: absolute;
+    opacity: 0;
+    top: 28px;
+    right: 29px;
+}
+
+.navbar__input-check:checked + nav {
+    display: none;
+}
+
 .navbar__ul-menu a {
     display: block;
-    padding: 10px 0;
+    padding: 10px 0; // Increase clickable space
+    margin-right: 50px; // Give space to prevent mis-tap of finger
 
-    font-size: 1.6rem;
     font-weight: bold;
 }
 
