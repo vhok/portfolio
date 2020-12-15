@@ -1,0 +1,24 @@
+.navbar__div-hamburger {
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 3px;
+}
+
+.navbar__div-hamburger-strokes {
+    width: 25px;
+    margin: 8px 12px;
+}
+
+// Lobotomized owl selector * + *
+// Select every element which has an adjacent item right before it.
+.navbar__div-hamburger-strokes * + * {
+    margin-top: 7px;
+}
+
+.navbar__div-hamburger-strokes span {
+    display: block;
+    height: 2px;
+    background-color: rgba(255,255,255,.5);
+}
+
+
+

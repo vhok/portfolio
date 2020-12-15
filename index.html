@@ -9,38 +9,72 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <main>
-        <section class="nav">
-            <div>
-                <img src="./assets/logo.svg" alt="VHok Logo" class="logo">
-            </div>
-            <nav>
+    <div class="wrapper">
+        <header>
+            <!-- ==================== NAVIGATION SECTION ==================== -->
+            <section class="navbar">
+                <div class="navbar__div-container">
+                    <div class="navbar__div-img-logo">
+                        <img src="./assets/logo.svg" alt="VHok Logo" class="logo">
+                    </div>
+                    <div class="navbar__div-hamburger">
+                        <div class="navbar__div-hamburger-strokes">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="navbar__ul-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <!-- ==================== BIO SECTION ==================== -->
+            <section class="bio" id="bio">
+                <div class="bio__div-img-profile">
+                    <img src="./assets/avatar.svg" alt="A cartoon depiction of me with black hair, a cowlick, and orange t-shirt.">
+                </div>
+                <h1>Victor Hok</h1>
+                <div>
+                    <span>I'm a </span><span>Front-End Developer</span>
+                </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
                 </ul>
-            </nav>
-        </section>
-        <section class="bio">
-            <div class="bio__div-img-profile">
-                <img src="./assets/avatar.svg" alt="A cartoon depiction of me with black hair, a cowlick, and orange t-shirt.">
-            </div>
-            <h1>Victor Hok</h1>
-            <span>I'm a </span><span>Front-End Developer</span>
-            <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </section>
-
-
-
-
-
-    </main>
+                <a href="#contact">Hire me</a>
+            </section>
+    
+            <!-- ==================== ABOUT SECTION ==================== -->
+            <section class="about" id="about">
+                <h2>About Me</h2>
+            </section>
+    
+            <!-- ==================== EXPERIENCE SECTION ==================== -->
+            <section class="experience" id="experience">
+                <h2>Experience</h2>
+            </section>
+    
+            <!-- ==================== NAVIGATION SECTION ==================== -->
+            <section class="projects" id="projects">
+                <h2>My Work</h2>
+            </section>
+    
+            <!-- ==================== CONTACT SECTION ==================== -->
+            <section class="contact" id="contact">
+                <h2>Get In Touch</h2>
+            </section>
+    
+        </main>
+    </div>
     
     <script src="./scripts.js"></script>
 </body>
