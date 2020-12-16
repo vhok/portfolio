@@ -2,7 +2,25 @@ $primary-color: #353353;
 $secondary-color: #FF4C60;
 $tertiary-color: #FFD15C;
 
-$wrapper-max: 1280px;
+$accent-color-ltblue: #454360;
+$accent-color-dkblue: #302f4e;
 
+$primary-font: 'Rubik', sans-serif;
+
+$wrapper-max: 1280px;
 $tablet-width: 768px;
 $mobile-width: 480px;
+
+@mixin button-style($btn-color) {
+    background-color: $btn-color;
+    border-radius: 20px;
+    padding: 10px 28px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+@mixin panel-style($panel-color) {
+    background-color: $panel-color;
+    border-radius: 20px;
+    padding: 30px;
+}
