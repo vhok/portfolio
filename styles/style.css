@@ -340,8 +340,12 @@ p {
   right: 29px;
 }
 
-.navbar__input-check:checked + nav {
+.navbar__input-check + nav {
   display: none;
+}
+
+.navbar__input-check:checked + nav {
+  display: block;
 }
 
 .navbar__ul-menu a {
