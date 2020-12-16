@@ -1,7 +1,15 @@
-h1 {
+h1, h2 {
     font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 p, span, a {
     font-size: 1.6rem;
+}
+
+p {
+    line-height: 1.5;
 }

@@ -1,8 +1,10 @@
+// ==================== DEFAULT STYLES ====================
+
 * {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: 'Rubik', sans-serif;
+    font-family: $primary-font;
 }
 
 html {
@@ -11,6 +13,10 @@ html {
 
 body {
     background-color: $primary-color;
+}
+
+section {
+    padding: 0 15px;
 }
 
 ul {
@@ -25,9 +31,21 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 .wrapper {
     max-width: $wrapper-max;
     margin: 0 auto;
 }
+
+// ==================== CONFIGURABLE STYLES ====================
+
+.btn--default {
+    @include button-style($secondary-color);
+}
+
+.panel--default {
+    @include panel-style($accent-color-dkblue);
+}
+
