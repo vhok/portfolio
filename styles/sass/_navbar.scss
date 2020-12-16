@@ -6,6 +6,12 @@
     position: fixed;
     left: 0;
     right: 0;
+
+    z-index: 10;
+}
+
+.navbar nav {
+    display: none;
 }
 
 .navbar__div-container {
@@ -25,13 +31,13 @@
 }
 
 .navbar__input-check:checked + nav {
-    display: none;
+    display: block;
 }
 
 .navbar__ul-menu a {
     display: block;
     padding: 10px 0; // Increase clickable space
-    margin-right: 50px; // Give space to prevent mis-tap of finger
+    margin-right: 50px; // Give margin to prevent mis-tap of finger while reaching for hamburger button
 
     font-weight: bold;
 }
