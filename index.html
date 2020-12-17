@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Victor Hok</title>
+    <title>VHok</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/34b81df2a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
@@ -58,10 +58,14 @@
     
             <!-- ==================== ABOUT SECTION ==================== -->
             <section class="about" id="about">
-                <div class="dot--accent">
-                    <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                <!-- Spacer is to account for fixed navbar -->
+                <div class="spacer"></div>
+                <div class="dot-container">
+                    <div class="dot-accent">
+                        <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                    </div>
+                    <h2>About Me</h2>
                 </div>
-                <h2>About Me</h2>
                 <div class="about__div-img-profile">
                     <img src="./assets/avatar.svg" alt="A cartoon depiction of me with black hair, a cowlick, and orange t-shirt.">
                 </div>
@@ -70,20 +74,36 @@
                     <a href="" class="btn--default">Download CV</a>
                 </div>
                 <h3>Stats</h3>
-                    <ul class="about__ul-stats">
-                        <li>
-                            <p>Stat 1</p>
-                        </li>
-                        <li>
-                            <p>Stat 2</p>
-                        </li>
-                        <li>
-                            <p>Stat 3</p>
-                        </li>
-                        <li>
-                            <p>Stat 4</p>
-                        </li>
-                    </ul>
+                <ul class="about__ul-stats">
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h3>9</h3>
+                            <p>Projects completed</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>2000</h3>
+                            <p>Lines of code written</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <h3>100</h3>
+                            <p>Git commits</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="far fa-folder"></i>
+                        <div>
+                            <h3>50</h3>
+                            <p>Files created</p>
+                        </div>
+                    </li>
+                </ul>
                 <h3>Skillset</h3>
                 <ul class="about__ul-skills">
                     <li>
@@ -132,42 +152,84 @@
     
             <!-- ==================== PROJECTS SECTION ==================== -->
             <section class="projects" id="projects">
-                <div class="dot--accent">
-                    <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                <div class="spacer"></div>
+                <div class="dot-container">
+                    <div class="dot-accent">
+                        <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                    </div>
+                    <h2>My Work</h2>
                 </div>
-                <h2>My Work</h2>
+                <ul class="projects__ul-list">
+                    <li>
+                        <div class="projects__div-thumbnail">
+                            <div class="mask">
+                                <h3>Project 1</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects__div-thumbnail">
+                            <div class="mask">
+                                <h3>Project 2</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects__div-thumbnail">
+                            <div class="mask">
+                                <h3>Project 3</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects__div-thumbnail">
+                            <div class="mask">
+                                <h3>Project 4</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects__div-thumbnail">
+                            <div class="mask">
+                                <h3>Project 5</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
     
             <!-- ==================== EXPERIENCE SECTION ==================== -->
             <section class="experience" id="experience">
-                <div class="dot--accent">
-                    <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                <div class="spacer"></div>
+                <div class="dot-container">
+                    <div class="dot-accent">
+                        <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                    </div>
+                    <h2>Experience</h2>
                 </div>
-                <h2>Experience</h2>
                 <div class="experience__div-academic panel--default">
                     <ul>
                         <li>
-                            <span>2020-2020</span>
+                            <span class="year">2020-2020</span>
                             <h3>Web Development Certificate</h3>
                             <p>Juno College of Technology</p>
                         </li>
                         <li>
-                            <span>2009-2016</span>
+                            <span class="year">2009-2016</span>
                             <h3>BASc. Mechanical Engineering</h3>
                             <p>The University of British Columbia</p>
-                            <p>Mechatronics Specialty</p>
                         </li>
                     </ul>
                 </div>
                 <div class="experience__div-work panel--default">
                     <ul>
                         <li>
-                            <span>2017-2020</span>
+                            <span class="year">2017-2020</span>
                             <h3>Methods Analyst</h3>
                             <p>Bombardier Aerospace</p>
                         </li>
                         <li>
-                            <span>2016-2017</span>
+                            <span class="year">2016-2017</span>
                             <h3>Project Manager</h3>
                             <p>ABI Ltd.</p>
                         </li>
@@ -177,13 +239,16 @@
     
             <!-- ==================== CONTACT SECTION ==================== -->
             <section class="contact" id="contact">
-                <div class="dot--accent">
-                    <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                <div class="spacer"></div>
+                <div class="dot-container">
+                    <div class="dot-accent">
+                        <img src="./assets/dots-bg-light.svg" alt="dot pattern" aria-hidden="true">
+                    </div>
+                    <h2>Get In Touch</h2>
                 </div>
-                <h2>Get In Touch</h2>
                 <div class="contact__div-info">
                     <h3>Let's talk!</h3>
-                    <p>Don't like using forms? Send an <a href="mailto:victorhok@outlook.com" class="link--default">email</a> 📧 or book an <a href="https://calendly.com/victorhok" class="link--default">appointment</a> 📅.</p>
+                    <p>Don't like using contact forms? Send an <a href="mailto:victorhok@outlook.com" class="link--default">email</a> 📧 or book an <a href="https://calendly.com/victorhok" class="link--default">appointment</a> 📅.</p>
                 </div>
                 <form action="https://formspree.io/f/xpzoyebg" method="POST">
                     <label for="name" class="sr-only">Enter your name.</label>
@@ -200,9 +265,9 @@
         </main>
     </div>
     <footer>
-        <!-- <p>Licensed use of PSD © 2020 Bolby Theme.</p> -->
-        Git/Javascript/jQuery Icons by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
-        Mobile Icon by <a href="https://iconscout.com/contributors/iconscout">Iconscout Freebies</a> on <a href="https://iconscout.com">Iconscout</a>
+        <p>
+            Icons provided by curtousey of <a href="https://iconscout.com/contributors/icon-mafia" target="_blank" rel="noopener noreferrer" class="link--default">Icon Mafia</a> and <a href="https://iconscout.com/contributors/iconscout" rel="noopener noreferrer" class="link--default">Iconscout Freebies</a> at <a href="https://iconscout.com" class="link--default">Iconscout</a>.
+        </p>
     </footer>
     <script src="./scripts.js"></script>
 </body>

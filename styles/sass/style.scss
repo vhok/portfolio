@@ -7,30 +7,30 @@
 @import 'responsive';
 
 // ==================== COMMON STYLES ====================
-.about,
-.projects,
-.experience,
-.contact {
+.dot-container {
     position: relative;
-    margin-top: 100px;
+    align-self: flex-start;
 
-    .dot--accent {
-        align-self: flex-start;
+    .dot-accent {
         position: absolute;
         top: -10px;
     }
 
     h2 {
-        align-self: flex-start;
         margin: 0 15px 50px;
     }
-    
-    // REMOVE LATER - ONLY FOR VISUALIZATION AID
-    min-height: 50vh;
+}
+
+.spacer {
+    height: 100px;
 }
 
 .logo {
     width: 100px;
+}
+
+.logo-skill {
+    width: 70px;
 }
 
 // ==================== BIO SECTION ====================
@@ -69,8 +69,21 @@
 }
 
 .about__ul-stats {
+    align-self: flex-start;
     display: flex;
-    // justify-content: space-evenly;
+    flex-direction: column;
+    
+    li {
+        display: flex;
+        position: relative;
+        margin-left: 70px;
+        margin-top: 20px;
+
+        i {
+            position: absolute;
+            left: -70px;
+        }
+    }
 }
 
 .about__ul-skills {
@@ -101,17 +114,42 @@
 }
 
 // ==================== PROJECTS SECTION ====================
+.projects__div-thumbnail,
+.mask {
+    border-radius: 20px;
+    min-height: 250px;
+}
+.projects__div-thumbnail {
+    background-color: $accent-color-ltblue;
+    margin-bottom: 20px;
+}
+
+.mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+// ==================== EXPERIENCE SECTION ====================
 .experience__div-academic {
     margin-bottom: 30px;
 }
 
-
-// ==================== EXPERIENCE SECTION ====================
 .experience__div-academic li:first-child,
 .experience__div-work li:first-child {
     margin-bottom: 50px;
 }
 
+.year {
+    color: $accent-text-color;
+    font-size: 1.4rem;
+}
 // ==================== CONTACT SECTION ====================
 .contact__div-info {
     background-image: url("./../assets/map-light.png");

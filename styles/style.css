@@ -277,15 +277,11 @@ button, input, textarea {
   margin: 0 auto;
 }
 
-.logo-skill {
-  width: 70px;
-}
-
 .btn--default {
   background-color: #FF4C60;
   border-radius: 24px;
   padding: 12px 28px;
-  margin: 20px 0;
+  margin-top: 20px;
   font-weight: bold;
 }
 
@@ -317,6 +313,10 @@ p, span, a, button, input, textarea {
 
 p {
   line-height: 1.5;
+}
+
+i {
+  font-size: 4rem;
 }
 
 .navbar {
@@ -390,36 +390,31 @@ p {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.about,
-.projects,
-.experience,
-.contact {
+.dot-container {
   position: relative;
-  margin-top: 100px;
-  min-height: 50vh;
-}
-
-.about .dot--accent,
-.projects .dot--accent,
-.experience .dot--accent,
-.contact .dot--accent {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.dot-container .dot-accent {
   position: absolute;
   top: -10px;
 }
 
-.about h2,
-.projects h2,
-.experience h2,
-.contact h2 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.dot-container h2 {
   margin: 0 15px 50px;
+}
+
+.spacer {
+  height: 100px;
 }
 
 .logo {
   width: 100px;
+}
+
+.logo-skill {
+  width: 70px;
 }
 
 .bio {
@@ -472,9 +467,29 @@ p {
 }
 
 .about__ul-stats {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__ul-stats li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.about__ul-stats li i {
+  position: absolute;
+  left: -70px;
 }
 
 .about__ul-skills {
@@ -514,6 +529,35 @@ p {
   padding: 25px;
 }
 
+.projects__div-thumbnail,
+.mask {
+  border-radius: 20px;
+  min-height: 250px;
+}
+
+.projects__div-thumbnail {
+  background-color: #454360;
+  margin-bottom: 20px;
+}
+
+.mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+.mask:hover {
+  opacity: 1;
+}
+
 .experience__div-academic {
   margin-bottom: 30px;
 }
@@ -521,6 +565,11 @@ p {
 .experience__div-academic li:first-child,
 .experience__div-work li:first-child {
   margin-bottom: 50px;
+}
+
+.year {
+  color: #8b88b1;
+  font-size: 1.4rem;
 }
 
 .contact__div-info {
