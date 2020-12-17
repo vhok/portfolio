@@ -239,7 +239,6 @@ html {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: "Rubik", sans-serif;
 }
 
 html {
@@ -278,10 +277,14 @@ button, input, textarea {
   margin: 0 auto;
 }
 
+.logo-skill {
+  width: 70px;
+}
+
 .btn--default {
   background-color: #FF4C60;
-  border-radius: 20px;
-  padding: 10px 28px;
+  border-radius: 24px;
+  padding: 12px 28px;
   margin: 20px 0;
   font-weight: bold;
 }
@@ -290,6 +293,14 @@ button, input, textarea {
   background-color: #302f4e;
   border-radius: 20px;
   padding: 30px;
+}
+
+.link--default {
+  color: #FF4C60;
+}
+
+*, textarea, input, button {
+  font-family: "Rubik", sans-serif;
 }
 
 h1, h2 {
@@ -428,6 +439,14 @@ p {
           align-items: center;
 }
 
+.bio li {
+  display: inline-block;
+}
+
+.bio li a {
+  margin: 20px 10px 0;
+}
+
 .bio__div-img-profile {
   width: 100px;
   background-color: #fff;
@@ -452,9 +471,33 @@ p {
           align-items: center;
 }
 
-.about ul {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.about__ul-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__ul-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__ul-skills li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-bottom: 50px;
 }
 
 .about__div-img-profile {
@@ -475,6 +518,25 @@ p {
   margin-bottom: 30px;
 }
 
+.experience__div-academic li:first-child,
+.experience__div-work li:first-child {
+  margin-bottom: 50px;
+}
+
+.contact__div-info {
+  background-image: url("./../assets/map-light.png");
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+.contact__div-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact__div-info p {
+  margin-bottom: 20px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,13 +549,24 @@ form {
 
 form input {
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 form input, form textarea {
   color: black;
-  border-radius: 25px;
-  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+form input {
+  padding: 30px 20px;
+}
+
+form textarea {
+  padding: 15px 20px;
+}
+
+form textarea {
+  resize: vertical;
 }
 
 form button {

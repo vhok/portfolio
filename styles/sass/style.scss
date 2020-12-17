@@ -40,6 +40,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    li {
+        display: inline-block;
+
+        a {
+            margin: 20px 10px 0;
+        }
+    }
 }
 
 .bio__div-img-profile {
@@ -58,9 +66,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    ul {
-        align-self: flex-start;
+.about__ul-stats {
+    display: flex;
+    // justify-content: space-evenly;
+}
+
+.about__ul-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 50px;
     }
 }
 
@@ -85,9 +107,25 @@
 
 
 // ==================== EXPERIENCE SECTION ====================
-
+.experience__div-academic li:first-child,
+.experience__div-work li:first-child {
+    margin-bottom: 50px;
+}
 
 // ==================== CONTACT SECTION ====================
+.contact__div-info {
+    background-image: url("./../assets/map-light.png");
+    background-repeat: no-repeat;
+    min-height: 200px;
+    
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
 
 form {
     display: flex;
@@ -95,13 +133,24 @@ form {
     
     input {
         height: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     input, textarea {
         color: black;
-        border-radius: 25px;
-        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    input {
+        padding: 30px 20px;
+    }
+
+    textarea {
+        padding: 15px 20px;
+    }
+
+    textarea {
+        resize: vertical;
     }
 
     button {

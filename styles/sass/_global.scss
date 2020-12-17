@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: $primary-font;
 }
 
 html {
@@ -43,6 +42,9 @@ button, input, textarea {
     margin: 0 auto;
 }
 
+.logo-skill {
+    width: 70px;
+}
 // ==================== CONFIGURABLE STYLES ====================
 
 .btn--default {
@@ -53,3 +55,6 @@ button, input, textarea {
     @include panel-style($accent-color-dkblue);
 }
 
+.link--default {
+    color: $secondary-color;
+}
