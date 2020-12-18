@@ -6,8 +6,6 @@ function parallax(event) {
         const y = (window.innerHeight - event.pageY*speed)/100;
 
         shape.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        // console.log(x, y);
-        // console.log(speed);
     });
 }
 

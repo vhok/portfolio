@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VHok</title>
+    <!-- FONT CDNs -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ICON CDNs -->
     <script src="https://kit.fontawesome.com/34b81df2a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!-- STYLE SHEET -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -59,14 +62,19 @@
                     <img src="./assets/shapes/10.svg" alt="shape 10" class="shape10 shape" data-speed="3" aria-hidden="true">
                     <img src="./assets/shapes/11.svg" alt="shape 11" class="shape11 shape" data-speed="2" aria-hidden="true">
                 </div>
+                <!-- This div serves only to block the ability to select the floating images (negative UX) -->
+                <div class="animation-screen">
+                </div>
                 <div class="bio__div-img-profile">
                     <img src="./assets/avatar.svg" alt="A cartoon depiction of me with black hair, a cowlick, and orange t-shirt.">
                 </div>
-                <h1>Victor Hok</h1>
-                <div>
-                    <span>I'm a </span><span>Front-End Developer</span>
+                <div class="bio__div-text-profile">
+                    <h1>Victor Hok</h1>
+                    <div>
+                        <span>I'm a </span><span>Front-End Developer</span>
+                    </div>
+                    <a href="#contact" class="btn--default">Hire me</a>
                 </div>
-                <a href="#contact" class="btn--default">Hire me</a>
             </section>
     
             <!-- ==================== ABOUT SECTION ==================== -->
@@ -221,30 +229,36 @@
                 <div class="experience__div-academic panel--default">
                     <ul>
                         <li>
+                            <i class="icon-graduation"></i>
                             <span class="year">2020-2020</span>
                             <h3>Web Development Certificate</h3>
                             <p>Juno College of Technology</p>
                         </li>
                         <li>
+                            <i class="icon-graduation"></i>
                             <span class="year">2009-2016</span>
                             <h3>BASc. Mechanical Engineering</h3>
                             <p>The University of British Columbia</p>
                         </li>
                     </ul>
+                    <span class="line-vertical"></span>
                 </div>
                 <div class="experience__div-work panel--default">
                     <ul>
                         <li>
+                            <i class="icon-briefcase"></i>
                             <span class="year">2017-2020</span>
                             <h3>Methods Analyst</h3>
                             <p>Bombardier Aerospace</p>
                         </li>
                         <li>
+                            <i class="icon-briefcase"></i>
                             <span class="year">2016-2017</span>
                             <h3>Project Manager</h3>
                             <p>ABI Ltd.</p>
                         </li>
                     </ul>
+                    <span class="line-vertical"></span>
                 </div>
             </section>
     

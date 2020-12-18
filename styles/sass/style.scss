@@ -34,6 +34,24 @@
     width: 70px;
 }
 
+.animation-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.line-vertical {
+    position: absolute;
+    width: 1px;
+    background-color: #FF4C60;
+    top: 30px;
+    bottom: 30px;
+    left: 34px;
+}
+
 // ==================== BIO SECTION ====================
 .bio {
     min-height: 100vh;
@@ -41,13 +59,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    li {
-        display: inline-block;
+.bio__div-text-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
 
-        a {
-            margin: 20px 10px 0;
-        }
+    h1 {
+        margin: 12px 0;
     }
 }
 
@@ -146,6 +167,25 @@
 }
 
 // ==================== EXPERIENCE SECTION ====================
+.experience__div-academic,
+.experience__div-work {
+    position: relative;
+
+    ul {
+        margin-left: 40px;
+    }
+
+    li {
+        position: relative;
+    }
+
+    i {
+        position: absolute;
+        left: -47px;
+        z-index: 10;
+    }
+}
+
 .experience__div-academic {
     margin-bottom: 30px;
 }

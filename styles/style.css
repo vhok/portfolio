@@ -319,6 +319,13 @@ i {
   font-size: 4rem;
 }
 
+.icon-briefcase,
+.icon-graduation {
+  font-size: 2.2rem;
+  color: #FF4C60;
+  background-color: #302f4e;
+}
+
 .navbar {
   background-color: #353353;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -326,7 +333,7 @@ i {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 30;
 }
 
 .navbar__div-container {
@@ -352,11 +359,14 @@ i {
 }
 
 .navbar__input-check + nav {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in;
 }
 
 .navbar__input-check:checked + nav {
-  display: block;
+  height: 210px;
 }
 
 .navbar__ul-menu a {
@@ -495,6 +505,24 @@ i {
   width: 70px;
 }
 
+.animation-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.line-vertical {
+  position: absolute;
+  width: 1px;
+  background-color: #FF4C60;
+  top: 30px;
+  bottom: 30px;
+  left: 34px;
+}
+
 .bio {
   min-height: 100vh;
   display: -webkit-box;
@@ -512,12 +540,22 @@ i {
           align-items: center;
 }
 
-.bio li {
-  display: inline-block;
+.bio__div-text-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20;
 }
 
-.bio li a {
-  margin: 20px 10px 0;
+.bio__div-text-profile h1 {
+  margin: 12px 0;
 }
 
 .bio__div-img-profile {
@@ -642,6 +680,28 @@ i {
 
 .mask:hover {
   opacity: 1;
+}
+
+.experience__div-academic,
+.experience__div-work {
+  position: relative;
+}
+
+.experience__div-academic ul,
+.experience__div-work ul {
+  margin-left: 40px;
+}
+
+.experience__div-academic li,
+.experience__div-work li {
+  position: relative;
+}
+
+.experience__div-academic i,
+.experience__div-work i {
+  position: absolute;
+  left: -47px;
+  z-index: 10;
 }
 
 .experience__div-academic {
