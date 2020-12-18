@@ -52,6 +52,31 @@
     left: 34px;
 }
 
+@keyframes live {
+    0% {
+        color: $primary-color;
+    }
+
+    100% {
+        color: $secondary-color;
+    }
+}
+
+.rec--effect,
+.rec-outline {
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.rec--effect {
+    animation: live 3s ease-in-out alternate infinite;
+    font-size: 2.6rem;
+    padding: 3px;
+}
+
+.rec-outline {
+    font-size: 3.2rem;
+}
 // ==================== BIO SECTION ====================
 .bio {
     min-height: 100vh;
@@ -102,6 +127,7 @@
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     
     li {
         display: flex;
@@ -116,9 +142,11 @@
     }
 }
 
-.about__ul-skills {
+.about__ul-skills,
+.about__ul-skills-other {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 
     li {
         display: flex;
