@@ -13,18 +13,10 @@ function parallaxMobile(event) {
     this.querySelectorAll('.shape').forEach(shape => {
         const speed = shape.getAttribute('data-speed');
 
-            const x = (window.innerWidth - event.touches[0].screenX * speed) / 100;
-            const y = (window.innerHeight - event.touches[0].screenY * speed) / 100;
+            const x = (window.innerWidth - event.touches[0].screenX * speed) / 90;
+            const y = (window.innerHeight - event.touches[0].screenY * speed) / 90;
 
-            console.log(event.touches[0].screenX);
             shape.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        // for(let touch of event.touches) {
-        //     const x = (window.innerWidth - touch.screenX * speed) / 100;
-        //     const y = (window.innerHeight - touch.screenY * speed) / 100;
-    
-        //     console.log(event.screenX);
-        //     shape.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        // }
     });
 }
 
