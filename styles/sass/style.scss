@@ -4,34 +4,79 @@
 @import 'typography';
 @import 'navbar';
 @import 'hamburger';
+@import 'parallax';
+@import 'responsive';
 
 // ==================== COMMON STYLES ====================
-.about,
-.projects,
-.experience,
-.contact {
+.dot-container {
     position: relative;
-    margin-top: 100px;
+    align-self: flex-start;
 
-    .dot--accent {
-        align-self: flex-start;
+    .dot-accent {
         position: absolute;
         top: -10px;
     }
 
     h2 {
-        align-self: flex-start;
         margin: 0 15px 50px;
     }
-    
-    // REMOVE LATER - ONLY FOR VISUALIZATION AID
-    min-height: 50vh;
+}
+
+.spacer {
+    height: 100px;
 }
 
 .logo {
     width: 100px;
 }
 
+.logo-skill {
+    width: 70px;
+}
+
+.animation-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.line-vertical {
+    position: absolute;
+    width: 1px;
+    background-color: #FF4C60;
+    top: 30px;
+    bottom: 30px;
+    left: 34px;
+}
+
+@keyframes live {
+    0% {
+        color: $primary-color;
+    }
+
+    100% {
+        color: $secondary-color;
+    }
+}
+
+.rec--effect,
+.rec-outline {
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.rec--effect {
+    animation: live 3s ease-in-out alternate infinite;
+    font-size: 2.6rem;
+    padding: 3px;
+}
+
+.rec-outline {
+    font-size: 3.2rem;
+}
 // ==================== BIO SECTION ====================
 .bio {
     min-height: 100vh;
@@ -39,6 +84,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.bio__div-text-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+
+    h1 {
+        margin: 12px 0;
+    }
 }
 
 .bio__div-img-profile {
@@ -59,7 +115,45 @@
     align-items: center;
 
     ul {
-        align-self: flex-start;
+        margin-top: 50px;
+    }
+}
+
+.about__div-text-profile {
+    margin-top: 20px;
+}
+
+.about__ul-stats {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+    li {
+        display: flex;
+        position: relative;
+        margin-left: 70px;
+        margin-top: 20px;
+
+        i {
+            position: absolute;
+            left: -70px;
+        }
+    }
+}
+
+.about__ul-skills,
+.about__ul-skills-other {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 50px;
     }
 }
 
@@ -78,18 +172,108 @@
 }
 
 // ==================== PROJECTS SECTION ====================
+.projects__div-thumbnail,
+.mask {
+    border-radius: 20px;
+    min-height: 250px;
+}
+.projects__div-thumbnail {
+    background-color: $accent-color-ltblue;
+    margin-bottom: 20px;
+}
+
+.mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+// ==================== EXPERIENCE SECTION ====================
+.experience__div-academic,
+.experience__div-work {
+    position: relative;
+
+    ul {
+        margin-left: 40px;
+    }
+
+    li {
+        position: relative;
+    }
+
+    i {
+        position: absolute;
+        left: -47px;
+        z-index: 10;
+    }
+}
+
 .experience__div-academic {
     margin-bottom: 30px;
 }
 
+.experience__div-academic li:first-child,
+.experience__div-work li:first-child {
+    margin-bottom: 50px;
+}
 
-// ==================== EXPERIENCE SECTION ====================
-
-
+.year {
+    color: $accent-text-color;
+    font-size: 1.4rem;
+}
 // ==================== CONTACT SECTION ====================
+.contact__div-info {
+    background-image: url("./../assets/map-light.png");
+    background-repeat: no-repeat;
+    min-height: 200px;
+    
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
 
 form {
+    display: flex;
+    flex-direction: column;
+    
+    input {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
     input, textarea {
         color: black;
+        border-radius: 30px;
     }
+
+    input {
+        padding: 30px 20px;
+    }
+
+    textarea {
+        padding: 15px 20px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        align-self: flex-start;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
 }

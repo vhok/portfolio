@@ -7,11 +7,7 @@
     left: 0;
     right: 0;
 
-    z-index: 10;
-}
-
-.navbar nav {
-    display: none;
+    z-index: 30;
 }
 
 .navbar__div-container {
@@ -30,14 +26,22 @@
     right: 29px;
 }
 
+// Menu animation
+.navbar__input-check + nav {
+    height: 0;
+    overflow: hidden; // Important for hiding contents when collapsed.
+    transition: height 0.2s ease-in;
+}
+
+// This height needs to be updated change layout of menu.
 .navbar__input-check:checked + nav {
-    display: block;
+    height: 210px;
 }
 
 .navbar__ul-menu a {
     display: block;
     padding: 10px 0; // Increase clickable space
-    margin-right: 50px; // Give margin to prevent mis-tap of finger while reaching for hamburger button
+    margin-right: 50px; // Give space to prevent mis-tap of finger
 
     font-weight: bold;
 }

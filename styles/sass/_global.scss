@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: $primary-font;
 }
 
 html {
@@ -34,6 +33,10 @@ a {
     display: inline-block;
 }
 
+button, input, textarea {
+    border: none;
+}
+
 .wrapper {
     max-width: $wrapper-max;
     margin: 0 auto;
@@ -49,3 +52,6 @@ a {
     @include panel-style($accent-color-dkblue);
 }
 
+.link--default {
+    color: $secondary-color;
+}

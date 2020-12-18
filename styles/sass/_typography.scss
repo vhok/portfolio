@@ -1,3 +1,7 @@
+*, textarea, input, button {
+    font-family: $primary-font;
+}
+
 h1, h2 {
     font-size: 3.6rem;
 }
@@ -6,10 +10,21 @@ h3 {
     font-size: 2rem;
 }
 
-p, span, a {
+p, span, a, button, input, textarea {
     font-size: 1.6rem;
 }
 
 p {
     line-height: 1.5;
+}
+
+i {
+    font-size: 4rem;
+}
+
+.icon-briefcase,
+.icon-graduation {
+    font-size: 2.2rem;
+    color: $secondary-color;
+    background-color: $accent-color-dkblue;
 }
