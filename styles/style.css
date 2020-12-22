@@ -652,8 +652,7 @@ i {
   left: -70px;
 }
 
-.about__ul-skills,
-.about__ul-skills-other {
+.about__ul-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,8 +661,7 @@ i {
   width: 100%;
 }
 
-.about__ul-skills li,
-.about__ul-skills-other li {
+.about__ul-skills li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,6 +690,10 @@ i {
   padding: 25px;
 }
 
+.projects a {
+  display: block;
+}
+
 .projects__div-thumbnail,
 .mask {
   border-radius: 20px;
@@ -701,6 +703,24 @@ i {
 .projects__div-thumbnail {
   background-color: #454360;
   margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mydebugpal {
+  background-image: url("./../assets/project-mydebugpal.jpg");
+}
+
+.sportspot {
+  background-image: url("./../assets/project-sportspot.jpg");
+}
+
+.gridxdrop {
+  background-image: url("./../assets/project-gridxdrop.jpg");
+}
+
+.bikerland {
+  background-image: url("./../assets/project-bikerland.jpg");
 }
 
 .mask {
@@ -713,7 +733,7 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
 

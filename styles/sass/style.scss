@@ -142,8 +142,7 @@
     }
 }
 
-.about__ul-skills,
-.about__ul-skills-other {
+.about__ul-skills {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -172,6 +171,12 @@
 }
 
 // ==================== PROJECTS SECTION ====================
+.projects {
+    a {
+        display: block;
+    }
+}
+
 .projects__div-thumbnail,
 .mask {
     border-radius: 20px;
@@ -180,13 +185,32 @@
 .projects__div-thumbnail {
     background-color: $accent-color-ltblue;
     margin-bottom: 20px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.mydebugpal {
+    background-image: url("./../assets/project-mydebugpal.jpg");
+}
+
+.sportspot {
+    background-image: url("./../assets/project-sportspot.jpg");
+}
+
+.gridxdrop {
+    background-image: url("./../assets/project-gridxdrop.jpg");
+}
+
+.bikerland {
+    background-image: url("./../assets/project-bikerland.jpg");
 }
 
 .mask {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
 }
 
