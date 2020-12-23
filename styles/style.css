@@ -687,6 +687,7 @@ i {
           align-items: center;
   width: 50%;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .about__div-img-profile {
@@ -717,6 +718,7 @@ i {
   margin-bottom: 20px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mydebugpal {
@@ -891,13 +893,62 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .about__div-img-profile,
+  .about__div-text-profile {
+    margin: 0 25px;
+  }
   .about__div-img-profile {
     min-width: 150px;
-    margin-left: 50px;
-    margin-right: 25px;
   }
-  .about__div-text-profile {
-    margin-right: 50px;
-    margin-left: 25px;
+  .about__ul-stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about__ul-skills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__ul-skills li {
+    width: 25%;
+  }
+  .projects__ul-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects__ul-list li {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+  }
+  .gridxdrop {
+    background-image: url("./../assets/project-gridxdrop-desktop.jpg");
+  }
+  .experience__div-panel-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .experience__div-academic,
+  .experience__div-work {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+  .contact__div-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__div-info {
+    width: 30%;
+  }
+  .contact form {
+    width: calc(70% - 30px);
+    margin-left: 30px;
   }
 }
