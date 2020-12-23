@@ -945,10 +945,27 @@ footer {
     display: flex;
   }
   .contact__div-info {
-    width: 30%;
+    width: 35%;
   }
   .contact form {
-    width: calc(70% - 30px);
+    width: calc(65% - 30px);
     margin-left: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+  }
+  .contact form input[name=_replyto],
+  .contact form input[name=name] {
+    width: calc(50% - 10px);
+  }
+  .contact form input[name=name] {
+    margin-right: 20px;
   }
 }

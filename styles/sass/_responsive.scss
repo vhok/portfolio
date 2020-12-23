@@ -97,12 +97,30 @@
     }
 
     .contact__div-info {
-        width: 30%;
+        width: 35%;
     }
 
     .contact form {
-        width: calc(70% - 30px);
+        width: calc(65% - 30px);
         margin-left: 30px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        input,
+        textarea {
+            width: 100%;
+        }
+        
+        input[name=_replyto],
+        input[name=name] {
+            width: calc(50% - 10px);
+        }
+
+        input[name=name] {
+            margin-right: 20px;
+        }
+        
     }
 
 }
