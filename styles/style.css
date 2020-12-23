@@ -621,6 +621,19 @@ i {
   margin-top: 50px;
 }
 
+.about__div-profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .about__div-text-profile {
   margin-top: 20px;
 }
@@ -830,4 +843,61 @@ form button {
 footer {
   margin-top: 50px;
   text-align: center;
+}
+
+@media (min-width: 769px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main,
+  footer {
+    width: calc(100% - 250px);
+  }
+  .navbar__div-container label,
+  .navbar__input-check {
+    display: none;
+  }
+  .navbar,
+  .navbar__input-check + nav {
+    min-height: 100vh;
+    width: 250px;
+  }
+  .navbar {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    right: auto;
+  }
+  .animation-screen,
+  .parallax {
+    left: auto;
+    right: 0;
+    width: calc(100% - 250px);
+  }
+  .about__div-profile-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__div-img-profile {
+    min-width: 150px;
+    margin-left: 50px;
+    margin-right: 25px;
+  }
+  .about__div-text-profile {
+    margin-right: 50px;
+    margin-left: 25px;
+  }
 }

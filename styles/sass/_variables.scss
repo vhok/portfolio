@@ -13,6 +13,8 @@ $wrapper-max: 1280px;
 $tablet-width: 769px;
 $mobile-width: 481px;
 
+$navbar-desktop-width: 250px;
+
 @mixin button-style($btn-color) {
     background-color: $btn-color;
     border-radius: 24px;
