@@ -887,10 +887,14 @@ footer {
     width: 250px;
   }
   .navbar {
+    height: 100vh;
     border-bottom: none;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 50px 40px;
+    padding: 50px 40px 0 40px;
     right: auto;
+  }
+  .navbar nav {
+    overflow: visible;
   }
   .navbar__ul-menu {
     margin-top: 50px;
@@ -988,14 +992,8 @@ footer {
 }
 
 @media (max-height: 350px) and (min-width: 769px) {
-  .navbar nav {
-    overflow: visible;
-  }
   .navbar {
     overflow-x: hidden;
     overflow-y: scroll;
-  }
-  .navbar {
-    height: 100vh;
   }
 }

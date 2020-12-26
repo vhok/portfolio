@@ -30,10 +30,16 @@
     }
 
     .navbar {
+        height: 100vh;
         border-bottom: none;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 50px 40px;
+        padding: 50px 40px 0 40px;
         right: auto;
+    }
+
+    .navbar nav {
+        // Restore default behaviour to mitigate undesirable truncation with scrolling when working with desktop version.
+        overflow: visible;
     }
 
     .navbar__ul-menu {
@@ -135,16 +141,8 @@
 
 // This media query emables scrolling in navbar for extremely shrunken screen (height-wise).
 @media (max-height: 350px) and (min-width: $tablet-width) {
-    .navbar nav {
-        overflow: visible;
-    }
-
     .navbar {
         overflow-x: hidden;
         overflow-y: scroll;
-    }
-
-    .navbar {
-        height: 100vh;
     }
 }
