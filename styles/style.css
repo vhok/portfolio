@@ -330,7 +330,11 @@ i {
   background-color: #302f4e;
 }
 
-.navbar__ul-menu i {
+.navbar__ul-menu .icon-home,
+.navbar__ul-menu .icon-user,
+.navbar__ul-menu .icon-layers,
+.navbar__ul-menu .icon-briefcase,
+.navbar__ul-menu .icon-bubbles {
   font-size: 1.6rem;
   color: #FFD15C;
   margin-right: 15px;

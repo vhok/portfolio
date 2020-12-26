@@ -30,7 +30,12 @@ i {
 }
 
 .navbar__ul-menu {
-    i {
+    // Issue with chrome browser prevents application of DRY code.
+    .icon-home,
+    .icon-user,
+    .icon-layers,
+    .icon-briefcase,
+    .icon-bubbles {
         font-size: 1.6rem;
         color: $tertiary-color;
         margin-right: 15px;
