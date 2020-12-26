@@ -28,3 +28,12 @@ i {
     color: $secondary-color;
     background-color: $accent-color-dkblue;
 }
+
+.navbar__ul-menu {
+    i {
+        font-size: 1.6rem;
+        color: $tertiary-color;
+        margin-right: 15px;
+    }
+    
+}

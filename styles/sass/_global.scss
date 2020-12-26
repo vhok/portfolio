@@ -42,6 +42,10 @@ button, input, textarea {
     margin: 0 auto;
 }
 
+.desktop--only {
+    display: none;
+}
+
 // ==================== CONFIGURABLE STYLES ====================
 
 .btn--default {

@@ -6,10 +6,16 @@
         align-items: flex-end;
     }
 
+    .desktop--only {
+        display: inline;
+    }
+
     main,
     footer {
         width: calc(100% - #{$navbar-desktop-width});
     }
+
+    // ==================== NAVBAR SECTION ====================
 
     // Move navbar to left side of screen.
     .navbar__div-container label,
@@ -26,9 +32,12 @@
     .navbar {
         border-bottom: none;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
-
-        // padding: 15px 10px;
+        padding: 50px 40px;
         right: auto;
+    }
+
+    .navbar__ul-menu {
+        margin-top: 50px;
     }
 
     .animation-screen,
