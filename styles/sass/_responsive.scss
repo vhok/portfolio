@@ -131,5 +131,20 @@
         }
         
     }
+}
 
+// This media query emables scrolling in navbar for extremely shrunken screen (height-wise).
+@media (max-height: 350px) and (min-width: $tablet-width) {
+    .navbar nav {
+        overflow: visible;
+    }
+
+    .navbar {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .navbar {
+        height: 100vh;
+    }
 }

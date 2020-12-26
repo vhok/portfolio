@@ -986,3 +986,16 @@ footer {
     margin-right: 20px;
   }
 }
+
+@media (max-height: 350px) and (min-width: 769px) {
+  .navbar nav {
+    overflow: visible;
+  }
+  .navbar {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .navbar {
+    height: 100vh;
+  }
+}
