@@ -922,10 +922,18 @@ footer {
     min-width: 150px;
   }
   .about__ul-stats {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__ul-stats li {
+    width: 110px;
   }
   .about__ul-skills {
     -webkit-box-pack: center;
@@ -939,9 +947,15 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .projects__ul-list li {
-    width: calc(100% / 3 - 20px);
+    -ms-flex-preferred-size: 310px;
+        flex-basis: 310px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin: 10px;
   }
   .gridxdrop {

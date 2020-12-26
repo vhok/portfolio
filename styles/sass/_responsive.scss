@@ -69,7 +69,13 @@
     }
 
     .about__ul-stats {
+        align-self: center;
         flex-direction: row;
+        flex-wrap: wrap;
+
+        li {
+            width: 110px;
+        }
     }
 
     .about__ul-skills {
@@ -83,9 +89,13 @@
     // ==================== PROJECTS SECTION ====================
     .projects__ul-list {
         display: flex; 
+        flex-wrap: wrap;
 
         li {
-            width: calc(100% / 3 - 20px);
+            flex-basis: 310px;
+            flex-grow: 1;
+
+            // width: calc(100% / 3 - 20px);
             margin: 10px;
         }
     }
