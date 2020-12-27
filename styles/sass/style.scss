@@ -77,8 +77,8 @@
 .rec-outline {
     font-size: 3.2rem;
 }
-// ==================== BIO SECTION ====================
-.bio {
+// ==================== home SECTION ====================
+.home {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@
     align-items: center;
 }
 
-.bio__div-text-profile {
+.home__div-text-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,13 +97,13 @@
     }
 }
 
-.bio__div-img-profile {
+.home__div-img-profile {
     width: 100px;
     background-color: #fff;
 }
 
-.bio__div-img-profile, 
-.bio__div-img-profile img {
+.home__div-img-profile, 
+.home__div-img-profile img {
     border-radius: 50%;
 }
 

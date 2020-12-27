@@ -299,6 +299,10 @@ button, input, textarea {
   color: #FF4C60;
 }
 
+.link--active {
+  color: #FFD15C;
+}
+
 *, textarea, input, button {
   font-family: "Rubik", sans-serif;
 }
@@ -572,7 +576,7 @@ i {
   font-size: 3.2rem;
 }
 
-.bio {
+.home {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,7 +593,7 @@ i {
           align-items: center;
 }
 
-.bio__div-text-profile {
+.home__div-text-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,17 +607,17 @@ i {
   z-index: 20;
 }
 
-.bio__div-text-profile h1 {
+.home__div-text-profile h1 {
   margin: 12px 0;
 }
 
-.bio__div-img-profile {
+.home__div-img-profile {
   width: 100px;
   background-color: #fff;
 }
 
-.bio__div-img-profile,
-.bio__div-img-profile img {
+.home__div-img-profile,
+.home__div-img-profile img {
   border-radius: 50%;
 }
 
@@ -861,7 +865,7 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 851px) {
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1009,7 +1013,7 @@ footer {
   }
 }
 
-@media (max-height: 350px) and (min-width: 769px) {
+@media (max-height: 350px) and (min-width: 851px) {
   .navbar {
     overflow-x: hidden;
     overflow-y: scroll;
