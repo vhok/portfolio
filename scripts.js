@@ -1,5 +1,8 @@
 // ==================== PARALLAX EFFECT  ====================
+
 function parallax(event) {
+    event.preventDefault();
+
     this.querySelectorAll('.shape').forEach(shape => {
         const speed = shape.getAttribute('data-speed');
 
@@ -11,6 +14,8 @@ function parallax(event) {
 }
 
 function parallaxMobile(event) {
+    event.preventDefault();
+
     this.querySelectorAll('.shape').forEach(shape => {
         const speed = shape.getAttribute('data-speed');
 
@@ -22,36 +27,81 @@ function parallaxMobile(event) {
 
 // ==================== ACTIVE MENU SCROLLING ====================
 
-window.addEventListener('scroll', (event) => {
+function scrollHandler(event) {
     event.preventDefault();
 
     const menuLink = document.querySelectorAll('.navbar__ul-menu a');
     const scrollPositionY = window.scrollY;
 
-    menuLink.forEach( (link) => {
+    menuLink.forEach(link => {
         // Get DOM element by ID.
         const section = document.querySelector(link.hash);
 
         // If the current scroll position is somewhere within a specific section.
-        if ( scrollPositionY >= section.offsetTop && scrollPositionY < section.offsetTop + section.offsetHeight ) {
+        if (scrollPositionY >= section.offsetTop && scrollPositionY < section.offsetTop + section.offsetHeight) {
             link.classList.add('link--active');
         } else {
             link.classList.remove('link--active');
         }
-    })
-});
-
-/* 
-Add event listener depending on whether desktop or mobile device is detected.
-
-Key differences:
-    -finger touch vs. cursor movements
-    -mobile requires increased sensitivity due to smaller screen
-    -on mobile vertical touch motion causes scrolling and little value added for including vertical parallax effect.
-*/
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.addEventListener("touchmove", parallaxMobile);
-} else {
-    document.addEventListener("mousemove", parallax);
+    });
 }
 
+// ==================== CLOSE MENU ====================
+
+/** Behaviour: Checkbox listens for status change.
+ *  It checks whether the checked state is true or false (hamburger menu is open vs closed).
+ *  If the menu is opened, it adds an event listeners to allow any user clicks outside of the
+ *  menu to cause it to collapse and then removes the event listeners as clean up.
+ */
+
+function menuCloseHandler() {
+    const checkbox = document.getElementById('checkbox'); 
+
+    checkbox.checked = false;
+    document.getElementsByTagName('main')[0].removeEventListener('click', menuCloseHandler);
+    document.getElementsByTagName('footer')[0].removeEventListener('click', menuCloseHandler);
+}
+
+function menuChangeHandler(event) {
+    event.preventDefault();
+
+    const checkbox = document.getElementById('checkbox'); 
+
+    if(checkbox.checked) {
+        document.getElementsByTagName('main')[0].addEventListener('click', menuCloseHandler);
+        document.getElementsByTagName('footer')[0].addEventListener('click', menuCloseHandler);
+    } else {
+        document.getElementsByTagName('main')[0].removeEventListener('click', menuCloseHandler);
+        document.getElementsByTagName('footer')[0].removeEventListener('click', menuCloseHandler);
+    }
+}
+
+// ==================== INIT ====================
+
+function init() {
+    /* 
+    Add event listener depending on whether desktop or mobile device is detected.
+
+    Key differences:
+        -finger touch vs. cursor movements
+        -mobile requires increased sensitivity due to smaller screen
+        -on mobile vertical touch motion causes scrolling and little value added for including vertical parallax effect.
+    */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.addEventListener('touchmove', parallaxMobile);
+    } else {
+        document.addEventListener('mousemove', parallax);
+    }
+
+    document.getElementById('checkbox').addEventListener('change', menuChangeHandler);
+
+    window.addEventListener('scroll', scrollHandler);
+}
+
+
+// ==================== DOCUMENT READY ====================
+
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+
+});
