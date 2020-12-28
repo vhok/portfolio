@@ -496,6 +496,57 @@ i {
   width: 30px;
 }
 
+.typewriter-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.typewriter {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  border-right: 1px solid #fff;
+  white-space: nowrap;
+  -webkit-animation: typing 3.5s steps(40, end), caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end), caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
 .dot-container {
   position: relative;
   -ms-flex-item-align: start;

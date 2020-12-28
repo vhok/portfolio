@@ -1,0 +1,37 @@
+.typewriter-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.typewriter {
+    display: inline-block;
+    vertical-align: top;
+
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    
+    white-space: nowrap;
+    animation: 
+        typing 3.5s steps(40, end), 
+        caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
