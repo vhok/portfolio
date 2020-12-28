@@ -1,8 +1,6 @@
 // ==================== PARALLAX EFFECT  ====================
 
 function parallax(event) {
-    event.preventDefault();
-
     this.querySelectorAll('.shape').forEach(shape => {
         const speed = shape.getAttribute('data-speed');
 
