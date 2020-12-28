@@ -507,8 +507,8 @@ i {
   overflow: hidden;
   border-right: 1px solid #fff;
   white-space: nowrap;
-  -webkit-animation: typing 3.5s steps(40, end), caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end), caret 0.75s step-end infinite;
+  -webkit-animation: typing 2.5s steps(40, end), caret 0.75s step-end infinite;
+          animation: typing 2.5s steps(40, end), caret 0.75s step-end infinite;
 }
 
 @-webkit-keyframes typing {
