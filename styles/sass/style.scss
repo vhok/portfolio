@@ -6,6 +6,7 @@
 @import 'hamburger';
 @import 'parallax';
 @import 'typewriter';
+@import 'pagedown';
 
 
 // ==================== COMMON STYLES ====================
@@ -106,6 +107,15 @@
 .home__div-img-profile, 
 .home__div-img-profile img {
     border-radius: 50%;
+}
+
+.home__div-scroll {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
 }
 
 // ==================== ABOUT SECTION ====================

@@ -11,7 +11,7 @@ function parallax(event) {
     });
 }
 
-function parallaxMobile(event) {
+function parallaxMobile(event) {1
     event.preventDefault();
 
     this.querySelectorAll('.shape').forEach(shape => {
