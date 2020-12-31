@@ -345,6 +345,10 @@ i {
   margin-right: 15px;
 }
 
+.to-top i {
+  font-size: 2.5rem;
+}
+
 .navbar {
   background-color: #353353;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -674,6 +678,25 @@ i {
 
 .rec-outline {
   font-size: 3.2rem;
+}
+
+.to-top {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.to-top div {
+  line-height: 51px;
+}
+
+.to-top--hidden {
+  display: none;
 }
 
 .home {

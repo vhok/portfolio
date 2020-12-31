@@ -23,7 +23,7 @@ function parallaxMobile(event) {1
     });
 }
 
-// ==================== ACTIVE MENU SCROLLING ====================
+// ==================== ACTIVE MENU SCROLLING & SCROLL TOP BUTTON ====================
 
 function scrollHandler(event) {
     event.preventDefault();
@@ -41,7 +41,17 @@ function scrollHandler(event) {
         } else {
             link.classList.remove('link--active');
         }
+
+
     });
+
+    const homeEndPositionY = document.getElementById('home').offsetHeight;
+
+    if(scrollPositionY >= homeEndPositionY) {
+        document.getElementById('to-top').classList.remove('to-top--hidden');
+    } else {
+        document.getElementById('to-top').classList.add('to-top--hidden');
+    }
 }
 
 // ==================== CLOSE MENU ====================
