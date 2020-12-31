@@ -23,7 +23,7 @@ function parallaxMobile(event) {1
     });
 }
 
-// ==================== ACTIVE MENU SCROLLING & SCROLL TOP BUTTON ====================
+// ==================== ACTIVE MENU SCROLLING & SCROLL TO TOP BUTTON ====================
 
 function scrollHandler(event) {
     event.preventDefault();
@@ -41,10 +41,9 @@ function scrollHandler(event) {
         } else {
             link.classList.remove('link--active');
         }
-
-
     });
 
+    // Check if in home section only to determine whether to hide/show scroll to top button.
     const homeEndPositionY = document.getElementById('home').offsetHeight;
 
     if(scrollPositionY >= homeEndPositionY) {
