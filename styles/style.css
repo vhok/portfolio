@@ -865,6 +865,10 @@ i {
   display: block;
 }
 
+.projects__ul-list li {
+  margin: 10px;
+}
+
 .projects__div-thumbnail,
 .mask {
   border-radius: 20px;
@@ -1103,7 +1107,6 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    margin: 10px;
   }
   .gridxdrop {
     background-image: url("./../assets/project-gridxdrop-desktop.jpg");
