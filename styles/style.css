@@ -349,6 +349,10 @@ i {
   font-size: 2.5rem;
 }
 
+.home__div-text-profile i {
+  font-size: 3rem;
+}
+
 .navbar {
   background-color: #353353;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -732,6 +736,10 @@ i {
 
 .home__div-text-profile h1 {
   margin: 12px 0;
+}
+
+.home__div-text-profile i {
+  margin-top: 20px;
 }
 
 .home__div-img-profile {
