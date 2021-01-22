@@ -782,8 +782,8 @@ i {
           align-items: center;
 }
 
-.about ul {
-  margin-top: 50px;
+.about h3 {
+  margin: 50px 0;
 }
 
 .about__div-profile-container {
