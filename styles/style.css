@@ -629,6 +629,7 @@ i {
 
 .logo-skill {
   width: 70px;
+  max-height: 70px;
 }
 
 .animation-screen {
@@ -888,6 +889,10 @@ i {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.projects__p-description {
+  margin: 10px 0;
 }
 
 .mydebugpal {
